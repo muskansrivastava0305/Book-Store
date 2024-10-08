@@ -4,13 +4,13 @@ function Card({item}) {
     console.log(item);
     
   return (
-    <div className=' mt-4'>
-        <div className="card bg-base-100 w-96 shadow-xl">
+    <div className=' m-4 overflow-x-scroll flex space-x-4'>
+        <div className="card bg-base-100 w-80 sm:w-96 shadow-xl shrink-0">
   <figure>
     <img
       src= {item.image}
       alt="Shoes"
-      className=' bg-blue-100 ' />
+      className=' bg-blue-100 object-cover w-full h-auto' />
   </figure>
   <div className="card-body">
     <h2 className="card-title">
