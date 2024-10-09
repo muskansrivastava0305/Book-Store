@@ -4,8 +4,8 @@ function Card({item}) {
     console.log(item);
     
   return (
-    <div className=' mt-4'>
-        <div className="card bg-base-100 w-96 shadow-xl">
+    <div className=' m-4 flex gap-10'>
+        <div className="card bg-base-100 shadow-xl ">
   <figure>
     <img
       src= {item.image}
