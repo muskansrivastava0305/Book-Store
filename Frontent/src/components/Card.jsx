@@ -4,7 +4,7 @@ function Card({ item }) {
 
   return (
     <div className=" m-4 flex gap-10">
-      <div className="card bg-base-100 shadow-xl ">
+      <div className="card bg-base-100 shadow-xl hover:scale-105 dark:bg-slate-900 dark:text-white dark:border dark:shadow-sm">
         <figure>
           <img src={item.image} alt="Shoes" className=" bg-blue-100 " />
         </figure>
