@@ -1,7 +1,6 @@
 import React from "react";
 
 function Card({ item }) {
-
   return (
     <div className=" m-4 flex gap-10">
       <div className="card bg-base-100 shadow-xl hover:scale-105 dark:bg-slate-900 dark:text-white dark:border dark:shadow-sm">

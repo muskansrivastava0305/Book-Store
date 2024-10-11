@@ -9,7 +9,7 @@ function Course() {
     <div className=" max-w-screen-2xl container mx-auto md:px-20 px-4">
       <div className=" pt-28 flex flex-col justify-center items-center text-center">
         <h1 className=" text-2xl font-semibold md:text-4xl justify-center text-center">
-          We're delighted to have you {" "}
+          We're delighted to have you{" "}
           <span className=" text-pink-500">Here! :)</span>
         </h1>
         <p className=" mt-8">
