@@ -51,7 +51,7 @@ function Navbar() {
     <div
       className={` max-w-screen-2xl container mx-auto md:px-16 px-4 dark:bg-slate-900 dark:text-white fixed top-0 left-0 right-0 z-50 ${
         stickty
-          ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-500 dark:text-white duration-300 transition-all ease-in-out"
+          ? "sticky-navbar shadow-md bg-base-200 dark:bg-slate-400 dark:text-white duration-300 transition-all ease-in-out"
           : ""
       }`}
     >
