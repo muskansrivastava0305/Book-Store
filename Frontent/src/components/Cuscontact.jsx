@@ -15,7 +15,7 @@ function CusContact() {
         <div className=" h-screen w-full  flex justify-center items-center">
             <img src='https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728121431/pngtree_zkjm6c.png' className=' w-96 h-96 ' />
         </div>
-        <div className=" h-screen flex w-full h-full ">
+        <div className=" h-screen flex w-full ">
       <div className=" w-full">
         <div className=" modal-box  dark:bg-slate-900 dark:text-white ">
           <form  onSubmit={handleSubmit(onSubmit)} method="dialog" className=" ">
