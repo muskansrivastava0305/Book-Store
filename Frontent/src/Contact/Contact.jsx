@@ -7,7 +7,9 @@ function Contact() {
   return (
    <>
    <Navbar />
+   <div className=" min-h-screen">
    <CusContact />
+   </div>
    <Footer />
    </>
   )
