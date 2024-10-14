@@ -8,7 +8,12 @@ function Login() {
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => console.log(data);
+
+  const closeModal = () => {
+    document.getElementById('my_modal_3').close(); // Close the modal explicitly
+  };
 
   
 
@@ -20,15 +25,16 @@ function Login() {
       */}
       <dialog id="my_modal_3" className="modal ">
         <div className="modal-box  dark:bg-slate-900 dark:text-white">
-          <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
+          <form  onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
             <Link
               to="/"
               className="btn btn-sm btn-ghost absolute right-2 top-2"
+              onClick={closeModal}
             >
               ✕
             </Link>
-          </form>
+        
           <div className="">
             <div className=" mb-4">
               <h3 className="font-bold text-xl">Login</h3>
@@ -41,6 +47,7 @@ function Login() {
                 className=" border rounded-md w-full p-2 dark:bg-slate-900 dark:text-white"
                 {...register("email", { required: true })} 
               />
+              {errors.email && <span className=" text-red-400">This field is required</span>}
             </div>
 
             <div className="   h-10 mt-16">
@@ -51,21 +58,26 @@ function Login() {
                 className=" border rounded-md w-full p-2 dark:bg-slate-900 dark:text-white"
                 {...register("password", { required: true })} 
               />
+              {errors.password && <span  className=" text-red-400">This field is required</span>}
             </div>
-            <div className=" flex justify-between mt-12">
-              <button className=" bg-pink-500 px-3 py-1 text-lg rounded hover:cursor-pointer hover:bg-pink-900 text-white">
+            <div className=" flex justify-between mt-20">
+              <button  type="submit" className=" bg-pink-500 px-3 py-1 text-lg rounded hover:cursor-pointer hover:bg-pink-900 text-white">
                 Login
               </button>
               <p className=" flex items-center">
                 Not registered?{" "}
                 <Link to="/signup ">
-                  <span className=" text-blue-800 underline hover:cursor-pointer">
+                  <span className=" text-blue-800 underline hover:cursor-pointer p-10"
+                  onClick={() =>
+                    document.getElementById("my_modal_3").showModal()
+                  }>
                     Signup{" "}
                   </span>
                 </Link>{" "}
               </p>
             </div>
           </div>
+          </form>
         </div>
       </dialog>
     </div>
