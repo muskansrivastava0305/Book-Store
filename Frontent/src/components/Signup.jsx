@@ -1,23 +1,24 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Login from "./Login";
 
 function Signup() {
   return (
-    <div className=" flex h-screen  items-center justify-center">
-      <div id="my_modal_3" className="   ">
-        <div className="  dark:bg-slate-900 dark:text-white">
-          <form method="dialog">
+    <div className=" flex h-screen items-center justify-center ">
+      <div  className=" w-[600px]">
+        <div className=" modal-box  dark:bg-slate-900 dark:text-white ">
+          <form method="dialog" className=" ">
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-ghost absolute right-2 top-2">
+            <Link to="/" className=" selection:btn btn-sm btn-ghost absolute right-2 top-2">
               ✕
-            </button>
+            </Link>
           </form>
           <div className="">
             <div className=" mb-4">
               <h3 className="font-bold text-xl">SignUp</h3>
             </div>
             <div className="  h-10">
-              <p className="p-1 flex items-center w-40 text-lg ">Name</p>
+              <p className="p-1  text-lg ">Name</p>
               <input
                 type="text"
                 placeholder=" Enter your FullName"
@@ -45,13 +46,16 @@ function Signup() {
               <button className=" bg-pink-500 px-3 py-1 text-lg rounded hover:cursor-pointer hover:bg-pink-900 text-white">
                 SignUp
               </button>
-              <p className=" flex items-center">
-                Have account?{" "}
-                <Link to="/signup">
-                  <span className=" text-blue-800 underline hover:cursor-pointer">
+              <p className=" flex items-center text-lg">
+                Have account? {" "}
+                <button
+                className=" text-blue-800 underline hover:cursor-pointer text-lg font-semibold"
+                    onClick={() => 
+                    document.getElementById("my_modal_3").showModal()} >
                     Login
-                  </span>
-                </Link>{" "}
+                 
+                </button>{" "}
+                <Login />
               </p>
             </div>
           </div>

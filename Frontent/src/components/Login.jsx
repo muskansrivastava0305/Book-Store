@@ -1,7 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
 
 function Login() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => console.log(data);
+
+  
+
   return (
     <div className=" ">
       {/* <div className="btn" 
@@ -10,11 +20,14 @@ function Login() {
       */}
       <dialog id="my_modal_3" className="modal ">
         <div className="modal-box  dark:bg-slate-900 dark:text-white">
-          <form method="dialog">
+          <form method="dialog" onSubmit={handleSubmit(onSubmit)}>
             {/* if there is a button in form, it will close the modal */}
-            <button className="btn btn-sm btn-ghost absolute right-2 top-2">
+            <Link
+              to="/"
+              className="btn btn-sm btn-ghost absolute right-2 top-2"
+            >
               ✕
-            </button>
+            </Link>
           </form>
           <div className="">
             <div className=" mb-4">
@@ -26,9 +39,9 @@ function Login() {
                 type="text"
                 placeholder="UserName"
                 className=" border rounded-md w-full p-2 dark:bg-slate-900 dark:text-white"
+                {...register("email", { required: true })} 
               />
             </div>
-            
 
             <div className="   h-10 mt-16">
               <p className="p-1 flex items-center w-40 text-lg">Password</p>
@@ -36,6 +49,7 @@ function Login() {
                 type="password"
                 placeholder="Password"
                 className=" border rounded-md w-full p-2 dark:bg-slate-900 dark:text-white"
+                {...register("password", { required: true })} 
               />
             </div>
             <div className=" flex justify-between mt-12">
