@@ -53,7 +53,7 @@ function CusContact() {
             </div>
 
             <div className="   h-10 mt-16">
-              <p className="p-1 flex items-center w-40 text-lg">Message</p>
+              <p className="p-1 flex items-center w-40 text-lg font-semibold">Message</p>
               <input
                 type="text"
                 placeholder="Message"
@@ -67,6 +67,7 @@ function CusContact() {
               <button type="submit" className=" bg-pink-500 px-3 py-1 text-lg rounded hover:cursor-pointer hover:bg-pink-900 text-white ">
                 Submit
               </button>
+
             </div>
           </div>
           </form>
