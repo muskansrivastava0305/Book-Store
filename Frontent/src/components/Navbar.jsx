@@ -90,7 +90,7 @@ function Navbar() {
           <li><a>Item 3</a></li> */}
             </ul>
           </div>
-          <a className=" text-2xl font-semibold">Book Store</a>
+          <a className=" text-3xl font-serif font-semibold">Book Store</a>
         </div>
         <div className=" navbar-end space-x-3">
           <div className="navbar-center hidden lg:flex">

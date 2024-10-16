@@ -6,7 +6,7 @@ function Banner() {
       <div className="flex flex-col gap-9  w-full justify-center mt-10 order-2 md:order-1">
         <div className=" flex flex-col gap-9">
           <h1 className=" text-4xl font-bold">
-            Hello, welcomes here to learn somthing{" "}
+            Hello, welcomes here to learn something{" "}
             <span className=" text-pink-500">new everyday!!!</span>
           </h1>
           <p>
