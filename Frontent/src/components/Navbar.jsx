@@ -43,7 +43,7 @@ function Navbar() {
         <a href="/contact">Contact</a>
       </li>
       <li>
-        <a>Phone</a>
+        <a href="/phone">Phone</a>
       </li>
     </>
   );
