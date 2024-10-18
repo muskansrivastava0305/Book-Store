@@ -3,12 +3,12 @@ import dotenv from "dotenv";
 
 // const express = require('express');
 // const dotenv = require("dotenv");
-const app = express()
+const app = express();
 
 dotenv.config();
 // const port = 3000
 
-const PORT = process.nextTick.PORT || 40001
+const PORT = process.nextTick.PORT || 40001;
 const URI = process.env.MongoDBURI;
 
 // app.get('/', (req, res) => {
@@ -16,11 +16,8 @@ const URI = process.env.MongoDBURI;
 // })
 
 try {
-    
-} catch (error) {
-    
-}
+} catch (error) {}
 
 app.listen(PORT, () => {
-  console.log(`Server is listening on port ${PORT}`)
-})
+  console.log(`Server is listening on port ${PORT}`);
+});
