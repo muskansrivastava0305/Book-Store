@@ -1,13 +1,14 @@
 import mongoose from "mongoose";
 
-const BookSchema = mongoose.Schema({
+const bookSchema = mongoose.Schema({
     name:String,
-    proce:Number,
+    price:Number,
     category: String,
     image:String,
     title: String,
+   'Stock Price': { type: Date } 
 });
 
-const Book = mongoose.modek("Book" , bookSchema);
+const Book = mongoose.model("Book" , bookSchema);
 
 export default Book;

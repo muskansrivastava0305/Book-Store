@@ -2,6 +2,8 @@ import express from "express";
 import mongoose from "mongoose";
 import dotenv from "dotenv";
 
+import bookRoute from "./Route/book.route.js"
+
 // const express = require('express');
 // const dotenv = require("dotenv");
 const app = express();
@@ -10,7 +12,7 @@ dotenv.config();
 // const port = 3000
 
 const PORT = process.nextTick.PORT || 40001;
-const URI = process.env.MongoDBURI;
+const URI = process.env.MongoDBURL;
 
 // app.get('/', (req, res) => {
 //   res.send('MERN kal ')
@@ -25,6 +27,9 @@ try {
 } catch (error) {
   console.log("Error: ", error);
 }
+
+//defining routes
+app.use("/book", bookRoute);
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);

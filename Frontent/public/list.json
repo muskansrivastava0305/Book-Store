@@ -2,57 +2,63 @@
 
     {
         "id":1,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+        "Stock Price": "2023-10-21T10:00:00Z"
 
     },
 
     {
         "id":2,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+        "Stock Price": "2023-10-21T10:00:00Z"
 
     },
     {
         "id":3,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+        "Stock Price": "2023-10-21T10:00:00Z"
 
     },
     {
         "id":4,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+        "Stock Price": "2023-10-21T10:00:00Z"
 
     },
     {
         "id":5,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+        "Stock Price": "2023-10-21T10:00:00Z"
 
     },
     {
         "id":6,
-        "name" : "Story Bookk",
+        "name" : "Story Book",
         "title" : "Lorem, ipsum dolor sit",
         "price" : 0,
         "category" : "Free",
-        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png"
+        "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
+         "Stock Price": "2023-10-21T10:00:00Z"
 
     }
 
