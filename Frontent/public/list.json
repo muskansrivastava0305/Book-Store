@@ -3,8 +3,8 @@
     {
         "id":1,
         "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "title" : "Fantasy literature is literature set in an imaginary universe, often but not always without any locations, events. ",
+        "price" : 200,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
         "Stock Price": "2023-10-21T10:00:00Z"
@@ -13,9 +13,9 @@
 
     {
         "id":2,
-        "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "name" : "Horror",
+        "title" : "Horror novels attempt to scare the reader, using the tension this can provide to produce interest.",
+        "price" : 450,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
         "Stock Price": "2023-10-21T10:00:00Z"
@@ -23,9 +23,9 @@
     },
     {
         "id":3,
-        "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "name" : "Fantasy",
+        "title" : "Fantasy literature is literature set in an imaginary universe, often but not always without any locations, events, or people from the real world. ",
+        "price" : 250,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
         "Stock Price": "2023-10-21T10:00:00Z"
@@ -33,9 +33,9 @@
     },
     {
         "id":4,
-        "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "name" : "Science fiction",
+        "title" : "Science fiction is a genre of speculative fiction, which typically deals with imaginative and futuristic concepts such as advanced science.",
+        "price" : 350,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
         "Stock Price": "2023-10-21T10:00:00Z"
@@ -43,9 +43,9 @@
     },
     {
         "id":5,
-        "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "name" : "Mystery",
+        "title" : "Mystery. Mystery is one of the most popular literary genres in both adult and children's literature.",
+        "price" : 399,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
         "Stock Price": "2023-10-21T10:00:00Z"
@@ -53,13 +53,13 @@
     },
     {
         "id":6,
-        "name" : "Story Book",
-        "title" : "Lorem, ipsum dolor sit",
-        "price" : 0,
+        "name" : "Romance novel",
+        "title" : "Romance books focus on characters who fall in love, and these stories typically have happy endings.",
+        "price" : 299,
         "category" : "Free",
         "image" : "https://res.cloudinary.com/dmrqjhzx5/image/upload/v1728122014/png-removebg-preview_zz1qln.png",
          "Stock Price": "2023-10-21T10:00:00Z"
 
     }
-
+    
 ]

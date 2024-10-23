@@ -11,7 +11,7 @@ const app = express();
 dotenv.config();
 // const port = 3000
 
-const PORT = process.nextTick.PORT || 40001;
+const PORT = process.nextTick.PORT || 4001;
 const URI = process.env.MongoDBURL;
 
 // app.get('/', (req, res) => {
