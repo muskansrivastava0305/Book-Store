@@ -1,3 +1,5 @@
+//Data-base schema
+
 import mongoose from "mongoose";
 
 const bookSchema = mongoose.Schema({

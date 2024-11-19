@@ -3,28 +3,27 @@ import mongoose from "mongoose";
 import dotenv from "dotenv";
 import cors from "cors";
 
-import bookRoute from "./Route/book.route.js"
-
-
-
+import bookRoute from "./Route/book.route.js";
+import userRoute from "./Route/user.route.js"
 // const express = require('express');
 // const dotenv = require("dotenv");
 const app = express();
 
 app.use(cors());
+app.use(express.json());
 
 dotenv.config();
 // const port = 3000
 
-const PORT = process.nextTick.PORT || 4001;
-const URI = process.env.MongoDBURL;
+const PORT = process.env.PORT || 4001;
+const URL = process.env.MongoDbURL;
 
 // app.get('/', (req, res) => {
 //   res.send('MERN kal ')
 // })
 
 try {
-  mongoose.connect(URI, {
+  mongoose.connect(URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   });
@@ -35,6 +34,8 @@ try {
 
 //defining routes
 app.use("/book", bookRoute);
+app.use("/user", userRoute);
+
 
 app.listen(PORT, () => {
   console.log(`Server is listening on port ${PORT}`);
