@@ -5,6 +5,7 @@ import { Route, Routes } from "react-router-dom"
 import Signup from "./components/Signup";
 import Contact from "./Contact/Contact";
 import Phone from "./Phone/Phone";
+import toast, { Toaster } from 'react-hot-toast';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/phone" element={<Phone />} />
      </Routes>
+     <Toaster />
      </div>
 
     

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 function Login() {
   const {
@@ -20,21 +21,23 @@ function Login() {
       .then((res) => {
         console.log(res.data);
         if (res.data) {
-          alert("logedin Successfully");
+          // alert("logging Successfully");
+          toast.success('logging Successfully');
         }
         localStorage.setItem("Users", JSON.stringify(res.data.user));
       })
       .catch((err) => {
         if (err.response) {
           console.log(err);
-          alert("Error:" + err.response.data.message);
+          //alert("Error:" + err.response.data.message);
+          toast.error("Error:" + err.response.data.message);
         }
       });
   };
 
-  const closeModal = () => {
-    document.getElementById("my_modal_3").close(); // Close the modal explicitly
-  };
+  // const closeModal = () => {
+  //   document.getElementById("my_modal_3").close(); // Close the modal explicitly
+  // };
 
   return (
     <div className=" ">
@@ -49,7 +52,8 @@ function Login() {
             <Link
               to="/"
               className="btn btn-sm btn-ghost absolute right-2 top-2"
-              onClick={closeModal}
+              // onClick={closeModal}
+              onClick={() => document.getElementById("my_modal_3").closest()}
             >
               ✕
             </Link>

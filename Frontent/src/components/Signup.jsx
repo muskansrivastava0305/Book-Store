@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import toast from "react-hot-toast";
 
 function Signup() {
   const {
@@ -22,13 +23,14 @@ function Signup() {
     .then((res)=>{
       console.log(res.data);
       if(res.data){
-        alert("Signup Successfully")
+       // alert("Signup Successfully")
+        toast.success("Signup Successfully");
       }
       localStorage.setItem("Users" ,JSON.stringify(res.data));
     }).catch((err)=>{
      if(err.response){
       console.log(err);
-      alert("Error:" + err.response.data.message)
+      toast.error("Error:" + err.response.data.message)
      }
     })
   }
